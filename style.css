@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+}
+
+.container  {
+    display: flex;
+    height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.card-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+}
+
+.front, .back {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    position: absolute;
+    color: white;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px;
+    padding: 20px 40px;
+    backface-visibility: hidden;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition:transform .6s ease-out;
+}
+
+.front {
+    align-items: center;
+    transform:perspective(1000px) rotateY(0deg);
+}
+
+.back {
+    transform:perspective(1000px) rotateY(180deg);
+}
+
+.small-text {
+    font-size: 10px;
+}
+
+.front-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.card-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.chip {
+    height: 65px;
+    width: 70px;
+}
+
+.logo {
+    height: 35px;
+}
+
+.card-number {
+    display: flex;
+    font-size: 24px;
+    gap: 30px;
+}
+
+.front-top-layer, .back-top-layer  {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+}
+
+.front-top-layer {
+    width: 80%;
+}
+
+.back-top-layer {
+    width: 100%;
+}
+
+.stripe {
+    background: black;
+    width: 100%;
+    margin: 10px 0px;
+    height: 50px;
+}
+
+.back-box {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.signature {
+    background-color: rgb(209, 209, 209);
+    height: 45px;
+    width: 240px;
+}
+
+.cvv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 45px;
+    width: 60px;
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    color: #999;
+    width: 65vh;
+    height: 80vh;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    padding: 30px;
+    margin: 30px;
+    gap: 25px;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    color: rgb(90, 90, 90);
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+select {
+    width: 10vh;
+}
+
+input {
+    width: 100%;
+}
+
+.same-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.submit {
+    transition: 100ms;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    background: rgb(175, 175, 175);
+    font-size: 16px;
+    margin-top: 25px;
+    padding: 12px;
+    border: none;
+}
+.submit:hover {
+    transform: scale(1.06);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+    background: rgb(175, 175, 175);
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
